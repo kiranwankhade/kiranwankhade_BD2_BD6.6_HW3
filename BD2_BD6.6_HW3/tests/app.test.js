@@ -2,7 +2,7 @@ const request = require("supertest");
 
 const { app } = require("../index.js");
 
-const { getAllBooks, getBooksById } = require("../controllers/index.js");
+const { getAllBooks, getBooksById } = require("../controllers/index");
 
 const http = require("http");
 
