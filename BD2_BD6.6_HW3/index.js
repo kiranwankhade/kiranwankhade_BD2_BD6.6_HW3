@@ -13,14 +13,26 @@ app.get("/", (req, res) => {
 });
 
 app.get("/books", (req, res) => {
-  const books = getAllBooks();
-  res.status(200).json({ books });
+  try {
+    const books = getAllBooks();
+    res.status(200).json({ books });
+  } catch (error) {
+    res.status(500).json({ message: "Error retrieving books", error });
+  }
 });
 
-app.get("/books/details/id", (req, res) => {
-  let book = getBooksById(parseInt(req.params.id));
-
-  res.status(200).json({ book });
+app.get("/books/details/:id", (req, res) => {  // Fixed the route path
+  try {
+    const bookId = parseInt(req.params.id);
+    const book = getBooksById(bookId);
+    if (book) {
+      res.status(200).json({ book });
+    } else {
+      res.status(404).json({ message: "Book not found" });
+    }
+  } catch (error) {
+    res.status(500).json({ message: "Error retrieving book", error });
+  }
 });
 
 module.exports = { app };
