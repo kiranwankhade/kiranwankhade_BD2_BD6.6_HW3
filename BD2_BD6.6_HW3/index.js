@@ -21,7 +21,7 @@ app.get("/books", (req, res) => {
   }
 });
 
-app.get("/books/details/:id", (req, res) => {  // Fixed the route path
+app.get("/books/details/:id", (req, res) => { 
   try {
     const bookId = parseInt(req.params.id);
     const book = getBooksById(bookId);
