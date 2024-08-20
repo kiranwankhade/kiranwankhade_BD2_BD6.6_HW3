@@ -1,7 +1,7 @@
 const cors = require("cors");
 const express = require("express");
 
-const { getAllBooks, getBooksById } = require("../controllers/index"");
+const { getAllBooks, getBooksById } = require("../controllers/index");
 
 const app = express();
 
