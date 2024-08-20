@@ -2,7 +2,7 @@ const request = require("supertest");
 
 const { app } = require("../index.js");
 
-const { getAllBooks, getBooksById } = require("../controllers/index");
+const { getAllBooks, getBooksById } = require("../controllers/index.js");
 
 const http = require("http");
 
@@ -61,20 +61,6 @@ describe("Controller Function Tests", () => {
 
     expect(result.length).toBe(3);
   });
-
-  // it("should return a book by id", () => {
-  //   const mockBook = {
-  //     bookId: 1,
-  //     title: "To Kill a Mockingbird",
-  //     author: "Harper Lee",
-  //     genre: "Fiction",
-  //   };
-
-  //   getBooksById.mockReturnValue(mockBook);
-  //   let result = getBooksById(1);
-  //   expect(result).toEqual(mockBook);
-  //   expect(getBooksById).toHaveBeenCalledWith(1);
-  // });
 });
 
 describe("APT Endpoints Test", () => {

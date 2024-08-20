@@ -1,14 +1,14 @@
 const cors = require("cors");
 const express = require("express");
 
-const { getAllBooks, getBooksById } = require("../controllers/index");
+const { getAllBooks, getBooksById } = require("../controllers/index.js");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.get("/", () => {
+app.get("/", (req, res) => {
   res.send("WELCOME");
 });
 
