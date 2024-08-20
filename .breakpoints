@@ -1,0 +1,36 @@
+{
+  "files": {
+    "BD2_BD4.1_HW1/index.js": [
+      {
+        "id": "05b2bb79-a365-4071-9a6c-348da88490b2",
+        "line": 92,
+        "version": 256,
+        "index": 2436
+      }
+    ],
+    "BD2_BD5.4_HW1/index.js": [
+      {
+        "id": "8aec97cb-c7d9-4be9-a2e9-93524215b9c1",
+        "line": 41,
+        "version": 504,
+        "index": 929
+      }
+    ],
+    "BD2_BD6.4_HW3/BD2_BD6.5_HW3": [
+      {
+        "id": "667e765e-29d4-48c7-8aac-5283286b4413",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ],
+    "BD2_BD6.5_HW3/BD2_BD6.6_HW3/.gitignore": [
+      {
+        "id": "ead660d1-d81b-434e-90a2-33e66e3546f4",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ]
+  }
+}
